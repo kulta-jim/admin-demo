@@ -9,13 +9,15 @@ import Login from './views/login.vue'
 import Home from './views/home'
 //账号管理
 import Account from './views/account'
-//部门管理
-import FrontEnd from './views/department/front-end'
-import BackEnd from './views/department/back-end'
+// //部门管理
+// import FrontEnd from './views/department/front-end'
+// import BackEnd from './views/department/back-end'
 //设置
 import Setting from './views/setting'
-//电影
-import MovieTop250 from './views/movie/top250'
+// //电影
+// import MovieTop250 from './views/movie/top250'
+
+import Project from './views/tables/project'
 
 
 // 告诉 Vue 使用 VueRouter
@@ -89,55 +91,78 @@ const router = new VueRouter({
                 }
             ]
         },
+        // {
+        //     path: '/department',
+        //     name: 'department',
+        //     component: Main,
+        //     meta: {
+        //         name: '部门管理',
+        //         unfold: true
+        //     },
+        //     redirect: {
+        //         name: "front-end"
+        //     },
+        //     children: [
+        //         {
+        //             path: 'front-end',
+        //             name: 'front-end',
+        //             component: FrontEnd,
+        //             meta: {
+        //                 name: '前端开发部'
+        //             }
+        //         }, {
+        //             path: 'back-end',
+        //             name: 'back-end',
+        //             component: BackEnd,
+        //             meta: {
+        //                 name: '后端开发部'
+        //             }
+        //         }
+        //     ]
+        // },
+        // {
+        //     path: '/movie',
+        //     name: 'movie',
+        //     component: Main,
+        //     meta: {
+        //         name: '电影管理',
+        //         unfold:true
+        //     },
+        //     redirect: {
+        //         name: 'movieTop250'
+        //     },
+        //     children: [
+        //         {
+        //             path: 'movieTop250',
+        //             name: 'movieTop250',
+        //             meta: {
+        //                 name: 'Top250',
+        //                 auth: true,
+        //             },
+        //             component: MovieTop250
+        //         }
+        //     ]
+        // },
         {
-            path: '/department',
-            name: 'department',
+            path: '/tables',
+            name: 'tables',
             component: Main,
-            meta: {
-                name: '部门管理',
+            meta:{
+                name: '表格',
                 unfold: true
             },
             redirect: {
-                name: "front-end"
+                name: ''
             },
             children: [
                 {
-                    path: 'front-end',
-                    name: 'front-end',
-                    component: FrontEnd,
-                    meta: {
-                        name: '前端开发部'
-                    }
-                }, {
-                    path: 'back-end',
-                    name: 'back-end',
-                    component: BackEnd,
-                    meta: {
-                        name: '后端开发部'
-                    }
-                }
-            ]
-        },
-        {
-            path: '/movie',
-            name: 'movie',
-            component: Main,
-            meta: {
-                name: '电影管理',
-                unfold:true
-            },
-            redirect: {
-                name: 'movieTop250'
-            },
-            children: [
-                {
-                    path: 'movieTop250',
-                    name: 'movieTop250',
-                    meta: {
-                        name: 'Top250',
-                        auth: true,
+                    path: 'project',
+                    name: 'project',
+                    meta:{
+                        name: 'project',
+                        auth:true
                     },
-                    component: MovieTop250
+                    component: Project
                 }
             ]
         },

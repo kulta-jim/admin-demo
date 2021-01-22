@@ -8,7 +8,7 @@ import {
 
 // 实际开发中需要根据不同的环境选择不同的api_baseUrl
 // const _domain = process.env.VUE_APP_API_URL;
-const _domain = 'https://douban.uieee.com';
+const _domain = 'http://localhost:8000';
 
 
 let config = {

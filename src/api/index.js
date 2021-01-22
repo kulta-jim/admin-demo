@@ -18,10 +18,12 @@ import axios, {
 
 // 引入api模块
 import movieApi from './modules/movie.api';
+import accountAPI from './modules/account.api';
 
 // 合并所有模块api并导出到外部， 可直接在页面使用 this.$api.某某方法
 const APIS = {
     movie: movieApi,
+    account: accountAPI,
 };
 
 /**
