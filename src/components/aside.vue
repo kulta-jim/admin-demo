@@ -1,7 +1,6 @@
-<!--  -->
 <template>
     <div class="myAside">
-        <div class="logo" v-if="logoShow">阿里巴巴后台管理系统</div>
+        <div class="logo" v-if="logoShow">Chsemi后台管理系统</div>
         <!-- 菜单组件 -->
         <a-menu
             :defaultSelectedKeys="selectedKeys"

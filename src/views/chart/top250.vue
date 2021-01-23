@@ -1,11 +1,3 @@
-<!--
- * @Description: 
- * @Autor: 王宏
- * @Date: 2020-03-12 17:55:23
- * @LastEditors: 王宏
- * @LastEditTime: 2020-03-16 15:14:56
- -->
-
 <template>
     <div class="movie">
         <a-table

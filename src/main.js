@@ -1,15 +1,12 @@
-/*
- * @Description: 
- * @Autor: 王宏
- * @Date: 2020-03-17 09:53:23
- * @LastEditors: 王宏
- * @LastEditTime: 2020-03-17 11:09:05
- */
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
-import store from './store'
+import Vue from 'vue';
+import App from './App.vue';
+import router from './router';
+import store from './store';
 import api from './api';
+import 'ant-design-vue/dist/antd.css';
+import 'xe-utils'
+import VXeTable from 'vxe-table'
+
 
 import {
     Input,
@@ -19,6 +16,8 @@ import {
     Breadcrumb,
     Table,
     Tag,
+    Form,
+    Checkbox,
 } from 'ant-design-vue';
 
 // Vue.component和Vue.use这里作用都是注册组件
@@ -30,7 +29,11 @@ Vue.use(Icon)
 Vue.use(Breadcrumb)
 Vue.use(Table)
 Vue.use(Tag)
+Vue.use(Form)
+Vue.use(Checkbox)
 
+
+Vue.use(VXeTable)
 Vue.prototype.$api = api;
 
 Vue.config.productionTip = false

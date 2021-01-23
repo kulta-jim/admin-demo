@@ -1,10 +1,3 @@
-<!--
- * @Description: 页面布局模板
- * @Autor: 王宏
- * @Date: 2020-03-16 14:16:04
- * @LastEditors: 王宏
- * @LastEditTime: 2020-03-16 15:09:07
- -->
 <template>
     <div class="myMain">
         <Aside></Aside>

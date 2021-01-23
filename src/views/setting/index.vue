@@ -1,10 +1,3 @@
-<!--
- * @Description: 
- * @Autor: 王宏
- * @Date: 2020-03-13 14:53:14
- * @LastEditors: 王宏
- * @LastEditTime: 2020-03-16 15:17:10
- -->
 <template>
     <div class="setting">
         <div>设置</div>

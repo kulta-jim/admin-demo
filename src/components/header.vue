@@ -1,11 +1,3 @@
-<!--
- * @Description: 
- * @Autor: 王宏
- * @Date: 2020-03-17 09:53:23
- * @LastEditors: 王宏
- * @LastEditTime: 2020-03-17 17:51:58
- -->
-<!--  -->
 <template>
     <div class="myHeader">
         <a-button
@@ -15,7 +7,7 @@
             <a-icon :type="collapsed ? 'menu-unfold' : 'menu-fold'" />
         </a-button>
         <div class="myHeader-right">
-            <div>马云</div>
+            <div>{{ username }}</div>
             <div style="margin:0 16px;color:blue">退出登录</div>
         </div>
     </div>
@@ -26,6 +18,7 @@
     export default {
         data() {
             return {
+                username: ''
             };
         },
 
